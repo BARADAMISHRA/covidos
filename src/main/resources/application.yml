@@ -1,0 +1,22 @@
+server:
+ port: 8081
+spring:
+  application:
+    name: covido
+  mvc:
+    view:
+      suffix: .html
+
+management:
+  endpoints: 
+   web:
+    exposure:
+     include:
+      - health
+     
+  endpoint:
+    health:
+      probes:
+        enabled:  true
+          
+       
